@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior</title>
+    <link rel="stylesheet" href="css/script2.css">
+<script type = "text/javascript">
+   function play() {
+        var myVideo = document.getElementById("video1");
+        if (myVideo.paused) {
+            myVideo.play();
+        } else {
+            myVideo.pause();
+        }
+    }
+    function stop() {
+        var myVideo = document.getElementById("video1");
+        myVideo.pause();
+        myVideo.currentTime = 0;
+    }
+</script>
+
+
+</head>
+<body>
+    <section class="container">
+        <div class = 'card'>
+            <div class = 'card-image card-1'></div>
+            <h2>Spring 2023</h2>
+            <p>The usual pandemonium outside the Dolce & Gabbana show was cranked up to 11 this afternoon. Three days ago, Kim Kardashian touched down in Milan and posted a pic of herself disembarking a PJ with the hashtags #CiaoKim and #DolceGabbana.</p>
+        </div>   
+        <div class = 'card'>
+            <div class = 'card-image card-2'></div>
+            <h2>Fall 2023</h2>
+            <p>Are Dolce & Gabbana the best tailors in the world of luxury fashion? At least one of their Milan rivals says so. Spelling out who here wouldn’t be wise, for them or for me, but I do have it on good authority. This collection delivered on the promise of that reputation.</p>
+        </div>
+        <div class = 'card'>
+            <div class = 'card-image card-3'></div>
+            <h2>Summer 2023</h2>
+            <p>The Dolce & Gabbana show was billed as an ode to women of all ages and sizes. For inspiration, the designers looked to their most fervent female clientele. “We want to reflect what sensuality looks like in real life, so we looked to the Alta Moda clients,” Stefano Gabbana said in a preview, referring to the women who buy the brand’s made-to-order line. The result was a collection titled Women. “It’s an homage to all women. We want to celebrate femininity and sensuality, and everything that belongs to women,” Domenico Dolce explained.</p>
+        </div>   
+    </section>
+
+
+    <video id = "video1" name = "video1" autoplay width="100%" >
+        <source src="Puglia 2023_ Alta Gioielleria, Alta Moda, Alta Sartoria.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+      
+    <form name="form" id="form" action="#" method="get">
+        <input type="button" value="Play/Pause" onclick="play();" />
+        <input type="button" value="Stop" onclick="stop();" />
+    </form>
+   
+  
+</body>
+</html>
