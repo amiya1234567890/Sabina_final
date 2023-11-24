@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://lirents.net/wp-content/uploads/printjaguar-4.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url("https://assets.vogue.com/photos/632f3b9083609d34e5a62ff0/master/w_1280,c_limit/00001-dolce-and-gabbana-spring-2023-ready-to-wear-credit-gorunway.jpg");
+}
+
+.card-2 {
+    background-image: url("https://assets-global.website-files.com/62ee0bbe0c783a903ecc0ddb/64012fe80728f52cd8d18af1_DG_Women%27sFW23-24_PriorityLooks%20(1).jpg");
+}
+
+.card-3 {
+    background-image: url("https://media.vogue.co.uk/photos/5f6b8ed260a86c74f57f3273/1:1/pass/Dolce&Gabbana_woman%2520fashion%2520show%2520ss21_FINALE%2520(1).jpg");
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
